@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    margin: 0;
+}
+
+/* CONTENEDOR */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* PANEL */
+.panel {
+    background: #1e293b;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.panel label {
+    display: block;
+    margin-top: 10px;
+}
+
+.panel input {
+    width: 100%;
+}
+
+/* BOTÓN */
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #22c55e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #16a34a;
+}
+
+/* SIMULACIÓN */
+.simulation {
+    margin-top: 20px;
+}
+
+canvas {
+    background: #020617;
+    border: 2px solid #334155;
+    border-radius: 6px;
+}
+
+/* GRÁFICAS */
+.graphs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 95%;
+    margin-top: 20px;
+}
+
+.graph-box {
+    background: #020617;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    text-align: center;
+}
+
+.graph-title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #94a3b8;
+}

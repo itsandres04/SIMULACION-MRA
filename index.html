@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Simulación Edificio Antisísmico</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Simulación de Edificio Antisísmico</h1>
+<div class="main">
+
+    <!-- PANEL -->
+    <div class="panel">
+        <h3>Controles</h3>
+
+        <label>Masa (m): <span id="mVal">2</span></label>
+        <input type="range" id="m" min="1" max="10" step="0.5" value="2">
+
+        <label>Rigidez (k): <span id="kVal">10</span></label>
+        <input type="range" id="k" min="1" max="20" value="10">
+
+        <label>Amortiguamiento (c): <span id="cVal">1</span></label>
+        <input type="range" id="c" min="0" max="10" step="0.5" value="1">
+
+        <button onclick="resetSim()">Reiniciar</button>
+
+        <p id="tipo"></p>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="content">
+
+        <!-- SIMULACIÓN -->
+        <div class="simulation">
+            <canvas id="canvas" width="450" height="300"></canvas>
+        </div>
+
+        <!-- GRÁFICAS -->
+        <div class="graphs">
+
+            <div class="graph-box">
+                <div class="graph-title">Desplazamiento</div>
+                <canvas id="graph1" width="250" height="130"></canvas>
+            </div>
+
+            <div class="graph-box">
+                <div class="graph-title">Velocidad</div>
+                <canvas id="graph2" width="250" height="130"></canvas>
+            </div>
+
+            <div class="graph-box">
+                <div class="graph-title">Energía</div>
+                <canvas id="graph3" width="250" height="130"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
